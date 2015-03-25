@@ -12,7 +12,4 @@ RUN apt-get -y install git
 RUN git clone http://github.com/LaurensRietveld/yasgui
 RUN cd yasgui && mvn package 
 RUN mv /yasgui/target/yasgui-13.*.war /tomcat/webapps/yasgui.war
-RUN ls /
-RUN ls /tomcat*
-RUN ls /tomcat/webapps
 # COPY config.json /tomcat/webapps/yasgui
