@@ -1,0 +1,49 @@
+{
+    "defaults": {
+        "endpoint": "http://dbpedia.org/sparql",
+        "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT * {\n\t?sub ?pred ?obj\n} LIMIT 10\n",
+        "tabTitle": "Query",
+        "contentTypeSelect": "application/sparql-results+xml",
+        "contentTypeConstruct": "text/turtle",
+        "outputFormat": "table",
+        "requestMethod": "POST",
+        "extraArgs": []
+    },
+    "enabledFeatures": {
+        "endpointSelection": true,
+        "queryParameters": true,
+        "namedGraphs": true,
+        "defaultGraphs": true,
+        "acceptHeaders": true,
+        "requestMethod": true,
+        "propertyCompletionMethods": {
+            "lov": true,
+            "query": true,
+            "queryResults": true
+        },
+        "classCompletionMethods": {
+            "lov": true,
+            "query": true,
+            "queryResults": true
+        }
+    },
+    "downloadOfflineCache": true,
+    "showDownloadProgressBar": true,
+    "googleAnalyticsId": "UA-11111111-1",
+    "bitlyApiKey": "R_xxxxxxxxxxxxxxxxxxxxxxxxx",
+    "bitlyUsername": "SomeUserName",
+    "mysqlDb": "YASGUI",
+    "mysqlUsername": "root",
+    "mysqlPassword": "root",
+    "mysqlHost": "localhost",
+    "githubUsername": "githubUserName",
+    "githubOathToken": "oathToken",
+    "githubRepo": "repository",
+    "defaultBookmarks": [
+        {
+            "title": "Get 10 triples",
+            "endpoint": "",
+            "query": "SELECT * WHERE {\n    ?s ?p ?o.\n}\nLIMIT 10"
+        }
+    ]
+}
